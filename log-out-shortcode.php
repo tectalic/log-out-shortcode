@@ -7,7 +7,7 @@ Version: 1.0
 Author: OM4
 Author URI: http://om4.com.au/
 Text Domain: log-out-shortcode
-Git URI: https://github.com/OM4/logout-shortcode
+Git URI: https://github.com/OM4/log-out-shortcode
 Git Branch: release
 License: GPLv2
 */
