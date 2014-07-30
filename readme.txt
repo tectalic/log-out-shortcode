@@ -1,6 +1,6 @@
 === Log Out Shortcode ===
 Tags: logout, shortcode, log-out, log out, link
-Contributors: jamesacollins
+Contributors: jamescollins
 Requires at least: 3.7
 Tested up to: 3.9.1
 Stable tag: 1.0
