@@ -6,7 +6,7 @@ Description: Add a log out link using a simple [logout] shortcode.
 Version: 1.0
 Author: OM4
 Author URI: http://om4.com.au/
-Text Domain: logout-shortcode
+Text Domain: log-out-shortcode
 Git URI: https://github.com/OM4/logout-shortcode
 Git Branch: release
 License: GPLv2
@@ -35,7 +35,7 @@ function logout_shortcode( $atts, $content = null, $shortcode_name = null ) {
 	$defaults = array(
 		'text' => __('Log out'), // This is the default log out text from wp-includes/general-template.php
 		'redirect' => '', // URL to redirect to after logging out
-		'class' => 'logout' //
+		'class' => 'logout' // CSS Class(es) to use in link.
 	);
 
 	if ( !is_user_logged_in() ) {
