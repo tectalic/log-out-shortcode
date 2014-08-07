@@ -2,12 +2,12 @@
 Tags: logout, shortcode, log-out, log out, link
 Contributors: jamescollins
 Requires at least: 3.9
-Tested up to: 3.9.1
-Stable tag: 1.0
+Tested up to: 3.9.2
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add a log out link to a post or page using a simple shortcode.
+Easily add a log out link or button to a post or page using a simple shortcode.
 
 == Description ==
 
@@ -59,6 +59,10 @@ This plugin is inspired by the [Logout Button plugin by Ben Poland](http://wordp
 Please see the [plugin description](http://wordpress.org/plugins/log-out-shortcode/) for a list of shortcodes and supported parameters.
 
 == Changelog ==
+
+= 1.0.1 =
+* WordPress 3.9.2 compatibility.
+* Add [logout] shortcode to plugin description.
 
 = 1.0 =
 * Initial release.
