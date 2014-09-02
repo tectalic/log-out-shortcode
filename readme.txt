@@ -3,7 +3,7 @@ Tags: logout, shortcode, log-out, log out, link
 Contributors: jamescollins
 Requires at least: 3.9
 Tested up to: 4.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,6 +59,9 @@ This plugin is inspired by the [Logout Button plugin by Ben Poland](http://wordp
 Please see the [plugin description](http://wordpress.org/plugins/log-out-shortcode/) for a list of shortcodes and supported parameters.
 
 == Changelog ==
+
+= 1.0.2 =
+* WordPress 4.0 compatibility.
 
 = 1.0.1 =
 * WordPress 3.9.2 compatibility.
