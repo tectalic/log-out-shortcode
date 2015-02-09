@@ -2,8 +2,8 @@
 Tags: logout, shortcode, log-out, log out, link
 Contributors: jamescollins
 Requires at least: 3.9
-Tested up to: 4.0
-Stable tag: 1.0.2
+Tested up to: 4.1
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,8 +32,9 @@ The 3 supported attributes/parameters are:
 - The HTML class(es) to use for the link. Multiple classes should be separated by a space.
 - Default: `logout`
 `redirect=""`
-- The URL to redirect the user to after they are logged out.
+- The path/URL to redirect the user to after they are logged out.
 - Default: the WordPress login screen.
+- Note: must be a URL or path on the same domain name as the WordPress website (cannot be an external domain/URL)
 
 **Some Examples:**
 `[logout text="Log Off"]` - A `Log Off` link that logs the user out.
@@ -59,6 +60,10 @@ This plugin is inspired by the [Logout Button plugin by Ben Poland](http://wordp
 Please see the [plugin description](http://wordpress.org/plugins/log-out-shortcode/) for a list of shortcodes and supported parameters.
 
 == Changelog ==
+
+= 1.0.3 =
+* Clarify usage of the redirect="" parameter.
+* WordPress 4.1 compatibility.
 
 = 1.0.2 =
 * WordPress 4.0 compatibility.
