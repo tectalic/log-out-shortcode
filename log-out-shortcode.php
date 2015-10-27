@@ -1,18 +1,18 @@
 <?php
 /*
 Plugin Name: Log Out Shortcode
-Plugin URI: https://om4.com.au/wordpress-plugins/
+Plugin URI: https://om4.com.au/plugins/log-out-shortcode/
 Description: Easily add a log out link to a post or page using a simple <code>[logout]</code> shortcode.
-Version: 1.0.3
+Version: 1.0.4
 Author: OM4
-Author URI: https://om4.com.au/
+Author URI: https://om4.com.au/plugins/
 Text Domain: log-out-shortcode
 License: GPLv2
 */
 
 /*
 
-   Copyright 2014-2015 OM4 (email: info@om4.com.au    web: http://om4.com.au/)
+   Copyright 2014-2015 OM4 (email: info@om4.com.au    web: https://om4.com.au/)
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by

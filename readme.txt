@@ -2,8 +2,8 @@
 Tags: logout, shortcode, log-out, log out, link
 Contributors: jamescollins
 Requires at least: 3.9
-Tested up to: 4.2
-Stable tag: 1.0.3
+Tested up to: 4.4
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,7 +46,7 @@ The 3 supported attributes/parameters are:
 Note: the shortcodes will return nothing/empty if the user isn't logged in.
 
 
-This plugin is inspired by the [Logout Button plugin by Ben Poland](http://wordpress.org/plugins/logout-button/).
+This plugin is inspired by the [Logout Button plugin by Ben Poland](https://wordpress.org/plugins/logout-button/).
 
 == Installation ==
 
@@ -57,9 +57,13 @@ This plugin is inspired by the [Logout Button plugin by Ben Poland](http://wordp
 
 = What shortcodes can be used? =
 
-Please see the [plugin description](http://wordpress.org/plugins/log-out-shortcode/) for a list of shortcodes and supported parameters.
+Please see the [plugin description](https://wordpress.org/plugins/log-out-shortcode/) for a list of shortcodes and supported parameters.
 
 == Changelog ==
+
+= 1.0.4 =
+* WordPress 4.4 compatibility.
+* Documentation updates.
 
 = 1.0.3 =
 * Clarify usage of the redirect="" parameter.
