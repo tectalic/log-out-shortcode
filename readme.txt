@@ -45,8 +45,9 @@ The 3 supported attributes/parameters are:
 
 Note: the shortcodes will return nothing/empty if the user isn't logged in.
 
-
 This plugin is inspired by the [Logout Button plugin by Ben Poland](https://wordpress.org/plugins/logout-button/).
+
+If you like, you can [contribute to this plugin on GitHub](https://github.com/OM4/log-out-shortcode).
 
 == Installation ==
 
