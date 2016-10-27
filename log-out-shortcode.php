@@ -3,7 +3,7 @@
 Plugin Name: Log Out Shortcode
 Plugin URI: https://om4.com.au/plugins/log-out-shortcode/
 Description: Easily add a log out link to a post or page using a simple <code>[logout]</code> shortcode.
-Version: 1.0.4
+Version: 1.0.5
 Author: OM4
 Author URI: https://om4.com.au/plugins/
 Text Domain: log-out-shortcode
@@ -54,7 +54,15 @@ function logout_shortcode( $atts, $content = null, $shortcode_name = null ) {
 		$atts['redirect'] = get_the_permalink();
 	}
 
-	return '<a href="' . esc_url( wp_logout_url( $atts['redirect'] ) ) . '" class="' . sanitize_html_class( $atts['class'] ) . '" >'  . esc_html( $atts['text'] ) . '</a>';
+	$class_html = '';
+	if ( '' != $atts['class'] ) {
+		// Multiple classes are separated by a space
+		$classes = explode( ' ', $atts['class'] );
+		$classes = array_map( 'sanitize_html_class', $classes );
+		$class_html = ' class="' . implode( $classes, ' ' ) . '"';
+	}
+
+	return '<a href="' . esc_url( wp_logout_url( $atts['redirect'] ) ) . '"' . $class_html . '>'  . esc_html( $atts['text'] ) . '</a>';
 
 }
 add_shortcode( 'logout', 'logout_shortcode' );
