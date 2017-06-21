@@ -2,7 +2,7 @@
 Tags: logout, shortcode, log-out, log out, link
 Contributors: jamescollins
 Requires at least: 3.9
-Tested up to: 4.7
+Tested up to: 4.8
 Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
