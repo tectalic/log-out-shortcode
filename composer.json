@@ -1,0 +1,11 @@
+{
+    "require-dev": {
+        "php-stubs/woocommerce-stubs": "^4.4.1",
+        "phpstan/phpstan-deprecation-rules": "^0.12.5",
+        "phpstan/phpstan": "^0.12.42",
+        "szepeviktor/phpstan-wordpress": "^0.6.2"
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse log-out-shortcode.php"
+    }
+}
