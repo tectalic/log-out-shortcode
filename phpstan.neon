@@ -1,6 +1,11 @@
 includes:
-  - vendor/szepeviktor/phpstan-wordpress/extension.neon
+	- vendor/szepeviktor/phpstan-wordpress/extension.neon
+	- vendor/phpstan/phpstan-deprecation-rules/rules.neon
 parameters:
-  fileExtensions:
-    - php
-  level: 5
+	scanDirectories:
+		- ../wordpress-develop/tests/phpunit/includes
+	paths:
+		- log-out-shortcode.php
+	fileExtensions:
+		- php
+	level: max
