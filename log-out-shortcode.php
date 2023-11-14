@@ -1,17 +1,20 @@
 <?php
+
+defined( 'ABSPATH' ) || exit;
+
 /*
 Plugin Name: Log Out Shortcode
 Plugin URI: https://om4.io/plugins/log-out-shortcode/
 Description: Easily add a log out link to a post or page using a simple <code>[logout]</code> shortcode.
-Version: 1.0.8
-Author: OM4
+Version: 1.1.0
+Author: OM4 Software
 Author URI: https://om4.io/
 Text Domain: log-out-shortcode
-License: GPLv2
+License: GPLv2+
  */
 
 /*
-Copyright 2014-2016 OM4 (email: plugins@om4.com.au    web: https://om4.io/)
+Copyright 2014-2023 OM4 (email: plugins@om4.io    web: https://om4.io/)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -31,9 +34,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 /**
  * Create logout link
  *
- * @param array  $atts           The shortcode attributes.
- * @param string $content        The shortcode content (if any).
- * @param string $shortcode_name Name of the shortcode.
+ * @param array<string,mixed> $atts           The shortcode attributes.
+ * @param string              $content        The shortcode content (if any).
+ * @param string              $shortcode_name Name of the shortcode.
  * @return string
  */
 function logout_shortcode( $atts, $content = '', $shortcode_name = '' ) {
@@ -56,9 +59,9 @@ function logout_shortcode( $atts, $content = '', $shortcode_name = '' ) {
 	}
 
 	if ( 'home' === $atts['redirect'] ) {
-			$atts['redirect'] = home_url();
+		$atts['redirect'] = home_url();
 	} elseif ( 'current' === $atts['redirect'] ) {
-		$atts['redirect'] = get_the_permalink();
+		$atts['redirect'] = get_the_permalink() ? get_the_permalink() : home_url();
 	}
 
 	$class_html = '';
@@ -70,8 +73,8 @@ function logout_shortcode( $atts, $content = '', $shortcode_name = '' ) {
 	}
 
 	return '<a href="' . esc_url( wp_logout_url( $atts['redirect'] ) ) . '"' . $class_html . '>' . esc_html( $atts['text'] ) . '</a>';
-
 }
+
 add_shortcode( 'logout', 'logout_shortcode' );
 add_shortcode( 'logout_to_current', 'logout_shortcode' );
 add_shortcode( 'logout_to_home', 'logout_shortcode' );

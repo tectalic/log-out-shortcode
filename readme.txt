@@ -1,9 +1,9 @@
 === Log Out Shortcode ===
 Tags: logout, shortcode, log-out, log out, link
 Contributors: jamescollins
-Requires at least: 3.9
-Tested up to: 5.5
-Stable tag: 1.0.8
+Requires at least: 6.0
+Tested up to: 6.4
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,10 @@ If you like, you can [contribute to this plugin on GitHub](https://github.com/OM
 Please see the [plugin description](https://wordpress.org/plugins/log-out-shortcode/) for a list of shortcodes and supported parameters.
 
 == Changelog ==
+
+= 1.1.0 =
+* Minimum required WordPress version updated to 6.0.
+* Mark compatibility with WordPress version 6.4.
 
 = 1.0.8 =
 * Fix Typo
