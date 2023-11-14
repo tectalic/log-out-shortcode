@@ -17,6 +17,11 @@
         "wp-coding-standards/wpcs": "^3.0"
     },
     "scripts": {
-        "phpstan": "vendor/bin/phpstan analyse log-out-shortcode.php"
+        "test:static": "vendor/bin/phpstan analyse --memory-limit=1G",
+        "test:style": "vendor/bin/phpcs -p -s ",
+        "test:style:fix": [
+            "vendor/bin/phpcbf -p -s || true",
+            "@test:style"
+        ]
     }
 }
