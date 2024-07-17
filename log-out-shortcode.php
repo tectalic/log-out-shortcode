@@ -6,7 +6,7 @@ defined( 'ABSPATH' ) || exit;
 Plugin Name: Log Out Shortcode
 Plugin URI: https://om4.io/plugins/log-out-shortcode/
 Description: Easily add a log out link to a post or page using a simple <code>[logout]</code> shortcode.
-Version: 1.1.1
+Version: 1.1.3
 Author: OM4 Software
 Author URI: https://om4.io/
 Text Domain: log-out-shortcode

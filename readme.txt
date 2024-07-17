@@ -62,6 +62,9 @@ Please see the [plugin description](https://wordpress.org/plugins/log-out-shortc
 
 == Changelog ==
 
+= 1.1.3 =
+* Fix version number.
+
 = 1.1.2 =
 * Mark compatibility with WordPress version 6.6.
 
